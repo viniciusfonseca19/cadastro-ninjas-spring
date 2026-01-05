@@ -50,3 +50,4 @@ public class NinjaModel {
         this.idade = idade;
     }
 }
+//teste
