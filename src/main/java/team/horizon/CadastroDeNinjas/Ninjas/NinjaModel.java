@@ -1,7 +1,9 @@
-package team.horizon.CadastroDeNinjas;
+package team.horizon.CadastroDeNinjas.Ninjas;
 
 //BIBLIOTECAS
 import jakarta.persistence.*;
+import team.horizon.CadastroDeNinjas.Missoes.MissoesModel;
+import java.util.*;
 
 //JPA == Java Persistence API
 
@@ -16,6 +18,7 @@ public class NinjaModel {
     private String nome;
     private String email;
     private int idade;
+    private List<MissoesModel> missoes;
 
     public NinjaModel() {
 
