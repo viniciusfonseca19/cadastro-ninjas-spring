@@ -2,6 +2,7 @@ package team.horizon.CadastroDeNinjas.Missoes;
 
 import jakarta.persistence.*;
 import team.horizon.CadastroDeNinjas.Ninjas.NinjaModel;
+import java.util.List;
 
 @Entity
 @Table(name = "tb_missoes")
@@ -15,8 +16,9 @@ public class MissoesModel {
 
     private String dificuldade;
 
-    @Transient
-    private NinjaModel ninja;
+    //@OneToMany - Uma missão para muitos ninjas
+    @OneToMany(mappedBy = "missoes")
+    private List<NinjaModel> ninja;
 
 
 }
