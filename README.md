@@ -49,17 +49,14 @@ ninja-cadastro-api
 * id
 * nome
 * idade
-* rank
-* vila
+* email
 * missão (relacionamento)
 
 ### 🎯 Missão
 
 * id
 * título
-* descrição
 * dificuldade
-* status
 
 ---
 
